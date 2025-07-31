@@ -21,11 +21,24 @@ namespace App
 
             }
         }
+        class Cat : Animal
+        {
+            String sentence = "Meow";
+            public override string MakeSound()
+            {
+                return sentence;
+
+            }
+        }
         static void Main(string[] args)
         {
+            Animal animal = new Animal();
             Animal dog = new Dog();
-            Console.WriteLine($"{dog.MakeSound()}");
+            Animal cat = new Cat();
 
+            Console.WriteLine(animal.MakeSound()); 
+            Console.WriteLine(dog.MakeSound());    
+            Console.WriteLine(cat.MakeSound());
         }
     }
 }
