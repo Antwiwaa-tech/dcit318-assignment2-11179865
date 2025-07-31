@@ -5,28 +5,28 @@ namespace App
     {
         class Animal
         {
-            String sentence = "Some generic sound";
+            String sound = "Some generic sound";
             public virtual string MakeSound()
             {
-                return sentence;
+                return sound;
             }
         }
 
         class Dog : Animal
         {
-            String sentence = "Bark";
+            String sound = "Bark";
             public override string MakeSound()
             {
-                return sentence;
+                return sound;
 
             }
         }
         class Cat : Animal
         {
-            String sentence = "Meow";
+            String sound = "Meow";
             public override string MakeSound()
             {
-                return sentence;
+                return sound;
 
             }
         }
